@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background: url(./pexels-arnesh-yadram-1046209.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 70%;
+  margin: 5rem auto;
+  padding: 1em;
+  border-radius: 10px;
+  gap: 2rem;
+
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.635);
+  color: white;
+}
+
+#subBttn {
+  font-size: 1.5rem;
+  padding: 0.5em;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  font-style: inherit;
+  background-color: rgba(255, 255, 255, 0.607);
+}
+
+#subBttn:hover,
+#subBttn:focus {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#birthdate {
+  font-size: 1.5rem;
+  width: 250px;
+  height: 40px;
+  padding: 0.5rem;
+  border: none;
+}
+#birthdate:focus {
+  outline: none;
+  border: none;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+}
+.answer-field {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+#answer {
+  border: 1px solid white;
+  width: 250px;
+  height: 40px;
+}
+#name {
+  width: 250px;
+  height: 40px;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  border: none;
+}
+#name:focus {
+  outline: none;
+  border: none;
+}
+#prediction {
+  font-size: 1.5rem;
+  margin: 1.5rem;
+}
+footer p {
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-position: center;
+    position: relative;
+    border: 1px solid black;
+  }
+  section {
+    flex-wrap: wrap;
+  }
+  .prediction-field {
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.5rem;
+  }
+  main {
+    width: 80%;
+  }
+  #name,
+  #birthdate {
+    width: 100%;
+  }
+
+  #prediction,
+  p {
+    display: inline-block;
+    width: 100%;
+  }
+  #prediction {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #answer {
+    margin-top: 1rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0px;
+  }
+  input {
+    margin-top: 1rem;
+  }
+}
